@@ -8,27 +8,28 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         app:cardBackgroundColor="#FFFFFFFF"
-        app:cardCornerRadius="10dp"
+        app:cardCornerRadius="20dp"
         app:cardElevation="5dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
-                android:layout_width="80dp"
+                android:layout_width="78dp"
                 android:layout_height="80dp"
                 android:padding="5dp"
-                app:srcCompat="@drawable/movie"/>
+                app:srcCompat="@drawable/movie" />
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/movieName"
@@ -46,7 +47,38 @@
                     android:gravity="right"
                     android:text="관객수"
                     android:textColor="#FF0000FF"
-                    android:textSize="16sp"/>
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="순위"
+                    android:textSize="15sp"
+                    android:paddingRight="10dp"
+                    android:textColor="#FF1493"
+                    android:gravity="right"
+                    android:maxLines="1"/>
+                <TextView
+                    android:id="@+id/audience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="누적관객수"
+                    android:textSize="15sp"
+                    android:paddingRight="10dp"
+                    android:textColor="#9932CC"
+                    android:gravity="center"
+                    android:maxLines="1"/>
+                <TextView
+                    android:id="@+id/start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="개봉일"
+                    android:textSize="15sp"
+                    android:paddingRight="10dp"
+                    android:textColor="#FFDC3C"
+                    android:gravity="left"
+                    android:maxLines="1"/>
+
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
