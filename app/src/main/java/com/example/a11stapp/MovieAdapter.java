@@ -58,11 +58,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                     start =  itemView.findViewById(R.id.start);
                 }
                 public void setItem(Movie item){
-                    movieName.setText(item.movieNm);
-                    peopleCount.setText(item.audiCnt);
-                    ranking.setText(item.rank);
-                    audience.setText(item.audiAcc);
-                    start.setText(item.openDt);
+                    movieName.setText(item.movieNm );
+                    peopleCount.setText(item.audiCnt + "명");
+                    ranking.setText(item.rank +"위");
+                    audience.setText("누적관객수"+item.audiAcc+"명");
+                    start.setText("개봉일"+item.openDt);
                 }
     }
 }
